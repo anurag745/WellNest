@@ -1,0 +1,142 @@
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav {
+    width: 100%;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-head {
+    margin-left: 1rem;
+    margin-top: 0.3rem;
+}
+
+.navlinks {
+    display: flex;
+    list-style: none;
+}
+
+.navlinks a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: white;
+    padding: 0.4rem 0.8rem;
+}
+
+#button {
+    border-radius: 2px;
+    padding: 0.4rem 1rem;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    transition-duration: 400ms;
+}
+
+#button:hover {
+    background-color: white;
+    color: black;
+}
+
+.bg {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.typewrite {
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.svg {
+    margin-top: -10rem;
+    position: relative;
+}
+
+#about {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-head {
+    font-weight: 800;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#about .container-fluid {
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+}
+
+#about div.text-center {
+    text-align: center;
+    padding: 0 1rem;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .typewrite {
+        font-size: 4rem;
+    }
+
+    .svg {
+    }
+
+    #about {
+        flex-direction: row;
+    }
+
+    .about-head {
+        font-size: 2rem;
+    }
+
+    #about .container-fluid {
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    nav {
+        padding: 10px 200px 10px 20px;
+    }
+
+    .typewrite {
+        font-size: 5rem;
+    }
+
+    .svg {
+        margin-top: -20rem;
+    }
+
+    #about .container-fluid {
+    }
+
+    #about img {
+    }
+}
